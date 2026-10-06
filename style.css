@@ -1,0 +1,97 @@
+:root {
+    --bg: #111;
+    --text: #ffffff;
+    --accent: #00897b;
+    --content-width: 700px;
+    --viewport-padding: clamp(16px, 4vw, 50px);
+    --preview-center-offset: clamp(140px, 18vw, 320px);
+    --preview-width: clamp(220px, 24vw, 360px);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--bg);
+    padding: 0 var(--viewport-padding);
+}
+
+.container {
+    max-width: var(--content-width);
+    margin: 0 auto;
+}
+
+header {
+    border-bottom: 1px solid #222;
+    padding: 2.5rem 0 1.5rem;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    color: var(--accent); /* Updated to tealish accent color */
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: #aaa;
+}
+
+.post-card {
+    background: #1a1a1a;
+    border: 1px solid #282828;
+    padding: 1.8rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    transition: border-color 0.2s ease;
+}
+
+.post-card:hover {
+    border-color: var(--accent);
+}
+
+.post-card h2 a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.post-card h2 a:hover {
+    color: var(--accent);
+}
+
+time {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--accent);
+    margin: 0.4rem 0 1rem;
+    font-weight: 500;
+}
+
+.post-card p {
+    color: #ccc;
+}
+
+ul {
+    margin: 1rem 0 1rem 1.5rem;
+    color: #ccc;
+}
+
+li {
+    margin-bottom: 0.4rem;
+}
+
+footer {
+    text-align: center;
+    padding: 3rem 0;
+    color: #666;
+    font-size: 0.9rem;
+    border-top: 1px solid #222;
+    margin-top: 2rem;
+}
